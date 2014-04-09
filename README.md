@@ -27,6 +27,7 @@ Add the following to the project's pom.xml file
 5. commit new artifacts
 6. git push origin master
 
+```
 mvn clean package install:install-file 
   -Dfile=target/trendrr-nsq-client-1.3-SNAPSHOT.jar 
   -Dsources=target/trendrr-nsq-client-1.3-SNAPSHOT-sources.jar
@@ -38,3 +39,4 @@ mvn clean package install:install-file
   -DpomFile=./pom.xml 
   -DupdateReleaseInfo=true 
   -DlocalRepositoryPath=../maven/releases
+```
