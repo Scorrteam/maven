@@ -28,15 +28,15 @@ Add the following to the project's pom.xml file
 6. git push origin master
 
 ```
-mvn clean package install:install-file 
-  -Dfile=target/trendrr-nsq-client-1.3-SNAPSHOT.jar 
-  -Dsources=target/trendrr-nsq-client-1.3-SNAPSHOT-sources.jar
-  -Djavadoc=target/trendrr-nsq-client-1.3-SNAPSHOT-javadoc.jar 
-  -DartifactId=trendrr-nsq-client 
-  -DgroupId=com.github.dustismo 
-  -Dversion=1.3 
-  -Dpackaging=jar 
-  -DpomFile=./pom.xml 
-  -DupdateReleaseInfo=true 
+mvn clean package install:install-file \
+  -Dfile=target/trendrr-nsq-client-1.3-SNAPSHOT.jar \
+  -Dsources=target/trendrr-nsq-client-1.3-SNAPSHOT-sources.jar \
+  -Djavadoc=target/trendrr-nsq-client-1.3-SNAPSHOT-javadoc.jar \
+  -DartifactId=trendrr-nsq-client \
+  -DgroupId=com.github.dustismo \
+  -Dversion=1.3 \
+  -Dpackaging=jar \
+  -DpomFile=./pom.xml \
+  -DupdateReleaseInfo=true \
   -DlocalRepositoryPath=../maven/releases
 ```
